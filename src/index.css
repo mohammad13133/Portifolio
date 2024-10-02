@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  .clip-custom {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -25,4 +30,57 @@
 }
 
 .duration-400 {
+}
+
+.skills__group {
+  padding: 20px;
+}
+.skills {
+  height: 500px;
+  background-color: #21232c;
+}
+
+.skills__container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.skills__data {
+  text-align: center;
+}
+.skills__data p {
+  width: 600px;
+  margin-bottom: 20px;
+}
+.skills__content {
+  display: flex;
+  justify-content: center;
+  column-gap: 4rem;
+}
+.skills__subtitle span {
+  color: var(--first-color);
+}
+.skill__item::marker {
+  color: var(--first-color);
+}
+/* Scrollbar track */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(162, 100%, 40%); /* Color of the scrollbar handle */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color when hovering over the handle */
 }
