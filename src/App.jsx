@@ -9,6 +9,7 @@ import Projects from "./assets/components/Projects";
 import Contact from "./assets/components/Contact";
 import ScrollReveal from "scrollreveal";
 import About from "./assets/components/About";
+import Skills from "./assets/components/Skills";
 
 function App() {
   useEffect(() => {
@@ -18,7 +19,7 @@ function App() {
       distance: "50px",
       duration: 800,
       delay: 200,
-      reset: true,
+      reset: false,
     });
 
     srTop.reveal(".reveal-top", {
@@ -37,7 +38,7 @@ function App() {
       distance: "50px",
       duration: 800,
       delay: 200,
-      reset: true,
+      reset: false,
     });
     srLeft.reveal(".reveal-left");
     srLeft.reveal(".reveal-left-about");
@@ -52,7 +53,7 @@ function App() {
       distance: "50px",
       duration: 800,
       delay: 200,
-      reset: true,
+      reset: false,
     });
     srBottom.reveal(".reveal-bottom", {
       interval: 200,
@@ -65,7 +66,7 @@ function App() {
       distance: "50px",
       duration: 800,
       delay: 200,
-      reset: true,
+      reset: false,
     });
     srRight.reveal(".reveal-right-contact", {
       interval: 200,
@@ -77,7 +78,8 @@ function App() {
       <Header />
       <Home />
       <About />
-      <Services />
+      <Skills />
+      {/* <Services /> */}
       <Projects />
       <Contact />
     </>

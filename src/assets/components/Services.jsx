@@ -4,12 +4,12 @@ function Services() {
   return (
     <section
       id="Services"
-      className="min-h-screen flex flex-col items-center justify-center bg-color-3"
+      className="min-h-screen flex flex-col items-center justify-center bg-color-3 max-sm:py-10"
     >
       <h2 className="text-4xl mb-10 reveal-top-services">
         My <span className="text-color-1">Servecies</span>
       </h2>
-      <div className="flex flex-row gap-[30px] max-md:flex-col">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <ServiceCard
           iconClass="ri-code-s-slash-line"
           title="Web Development"

@@ -11,7 +11,7 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["Home", "About", "Services", "Projects", "Contact"];
+      const sections = ["Home", "About", "Skills", "Projects", "Contact"];
       const scrollPosition = window.scrollY + window.innerHeight / 2; // Adjust this if needed
 
       sections.forEach((section) => {
@@ -52,7 +52,7 @@ function Header() {
               <Link isActive={activeSection === "About"}>About</Link>
             </li>
             <li>
-              <Link isActive={activeSection === "Services"}>Services</Link>
+              <Link isActive={activeSection === "Skills"}>Skills</Link>
             </li>
             <li>
               <Link isActive={activeSection === "Projects"}>Projects</Link>
@@ -79,19 +79,19 @@ function Header() {
         <div className="flex flex-col items-start pt-16 px-3 text-lg font-semibold lg:flex">
           <ul className="space-y-8">
             <li>
-              <Link>Home</Link>
+              <Link isActive={activeSection === "Home"}>Home</Link>
             </li>
             <li>
-              <Link>About</Link>
+              <Link isActive={activeSection === "About"}>About</Link>
             </li>
             <li>
-              <Link>Services</Link>
+              <Link isActive={activeSection === "Skills"}>Skills</Link>
             </li>
             <li>
-              <Link>Projects</Link>
+              <Link isActive={activeSection === "Projects"}>Projects</Link>
             </li>
             <li>
-              <Link>Contact</Link>
+              <Link isActive={activeSection === "Contact"}>Contact</Link>
             </li>
           </ul>
         </div>

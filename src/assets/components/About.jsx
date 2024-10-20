@@ -5,7 +5,7 @@ function About() {
   return (
     <section
       id="About"
-      className="bg-color-4 w-full h-[100vh] flex flex-col justify-center items-center lg:flex-row gap-10"
+      className="bg-color-4 w-full h-[100vh] flex flex-col max-sm:flex-col-reverse justify-center items-center lg:flex-row gap-10"
     >
       {/* Image with attractive shapes and effects */}
       <div className="relative flex justify-center items-center reveal-left-about">
@@ -17,7 +17,7 @@ function About() {
           className="relative object-cover w-[220px] h-[220px] rounded-full border-4 border-color-1 shadow-xl hover:scale-105 transition-transform duration-500"
         />
       </div>
-      <div className="flex flex-col items-center lg:items-start w-[600px]">
+      <div className="flex flex-col items-center lg:items-start sm:w-[600px]">
         <div className="font-medium text-lg flex flex-col items-center justify-center lg:items-start">
           <h3 className="text-5xl reveal-top-about">
             About <span className="text-color-1">Me</span>
@@ -41,7 +41,7 @@ function About() {
         </div>
         <div className="mt-8 space-x-5 flex">
           <a
-            href=""
+            href="https://github.com/mohammad13133"
             target="_blank"
             className="clip-custom bg-color-2 flex flex-row items-center transition-transform hover:-translate-y-3"
           >

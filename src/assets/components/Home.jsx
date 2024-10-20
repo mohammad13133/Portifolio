@@ -6,7 +6,7 @@ function Home() {
       id="Home"
       className="bg-color-3 w-full h-[100vh] flex flex-col justify-center items-center lg:flex-row gap-10"
     >
-      <div className="flex flex-col items-center lg:items-start reveal-top  w-[600px]">
+      <div className="flex flex-col items-center lg:items-start reveal-top  sm:w-[600px]">
         <div className="w-[70%] font-medium text-lg flex flex-col items-center justify-center lg:items-start">
           <h3 className="">
             hello <span className="text-color-1">i'm</span>
@@ -17,7 +17,7 @@ function Home() {
           <h3 className="home__education">computer Engineer</h3>
           <p className="text-center text-sm lg:text-start">
             This is My portifolio that i made using react,where to show my
-            projects and services.
+            projects and skills.
           </p>
           <div className="mt-4">
             <a
